@@ -1,9 +1,6 @@
 <template>
   <main>
-    <h1 class="main-title">
-      <span>Ciao,</span>
-      <div>{{ guestName }}</div>
-    </h1>
+    <Title />
     
   </main>
 </template>
@@ -11,22 +8,11 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
+import Title from '@/components/Title.vue'
 
-const route = useRoute();
 
-const currentPath = computed(() => route.path.replace('/', ''));
 
-const guestName = computed(() => {
-  switch(currentPath.value) {
-    case ('roman&anna'):
-      return 'Roman & Anna'
-    case ('dima&sasha'):
-      return 'Dima & Sasha'
-    default: 
-      return 'дорогие гости'
-  }
 
-})
 
 </script>
 
