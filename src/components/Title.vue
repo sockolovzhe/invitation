@@ -10,7 +10,7 @@ import { computed } from "vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute()
-const currentPath = computed(() => route.path.replace('/', ''))
+const currentPath = computed(() => route.params.userId)
 
 const guestName = computed(() => {
   switch(currentPath.value) {
