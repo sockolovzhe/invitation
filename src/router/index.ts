@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Title from '@/components/Title.vue'
+// @ts-ignore
+import Title from '../components/Title.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

@@ -6,12 +6,10 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
-import Title from '@/components/Title.vue'
-
-
-
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+// @ts-ignore
+import Title from './components/Title.vue'
 
 
 </script>
