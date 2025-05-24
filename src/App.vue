@@ -1,7 +1,11 @@
 <template>
   <main>
-    <Title />
-    
+    <router-view></router-view>
+    Просим выбрать алкоголь
+    <ul>
+      <li>Вино белое</li>
+      <li>Вино красное</li>
+    </ul>
   </main>
 </template>
 

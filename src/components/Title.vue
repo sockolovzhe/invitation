@@ -18,6 +18,8 @@ const guestName = computed(() => {
       return 'Roman & Anna'
     case ('dima&sasha'):
       return 'Dima & Sasha'
+    case ('lesha&lisa'):
+      return 'Lesha & Lisa'
     default: 
       return 'дорогие гости'
   }
