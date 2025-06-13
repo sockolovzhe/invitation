@@ -1,13 +1,25 @@
 <template>
+  <section class="title-wrapper">
   <h1 class="main-title">
     <span>Ciao,</span>
-    <div>{{ guestName }}</div>
+    <div>{{ guestName }}!</div>
   </h1>
+    
+    <!-- <p>Мы Вас так любим! Поэтому приглашаем стать свидетелями дня рождения нашей Семьи, который состоится </p> -->
+    <p class="subtitle" @click="isTitleVisible = true">Приглашаем на нашу свадьбу!</p>
+    <PhotoCard img="src/assets/we1.jpg" class="photo-card" text="Мы женимся!!!" />
+
+    <img src="../assets/lemon1.png" class="img-1">
+    <img src="../assets/lemon1.png" class="img-1-clone">
+    <img src="../assets/lemon2.png" class="img-2">
+    <img src="../assets/lemon3.png" class="img-3">
+  </section>
 </template>
 
-<script setup>
-import { computed } from "vue";
-import { useRoute } from "vue-router";
+<script setup lang="ts">
+import { computed, onMounted, ref } from "vue"
+import { useRoute } from "vue-router"
+import PhotoCard from "@/components/PhotoCard.vue"
 
 const route = useRoute()
 const currentPath = computed(() => route.params.userId)
@@ -24,13 +36,165 @@ const guestName = computed(() => {
       return 'дорогие гости'
   }
 })
-
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.title-wrapper {
+  position: relative;
+  height: 100vh;
+}
 .main-title {
+  padding-top: 15vh;
   font-family: 'Dancing Script';
-  font-size: 10vw;
+  font-size: 12vw;
   color: #023a6d;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    padding-top: 25vh;
+  }
+}
+
+.subtitle {
+  text-align: center;
+  width: 100%;
+  // font-family: "Marck Script", cursive;
+  font-family: "Nunito", sans-serif;
+  font-size: 5vh;
+  color: #292929;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (max-width: 1500px) {
+    bottom: 200px;
+    font-size: 4vh;
+  }
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.photo-card {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media (max-width: 1600px) {
+    width: 380px;
+    height: 340px;
+  }
+  @media (max-width: 1400px) {
+    width: 350px;
+    height: 310px;
+  }
+  @media (max-width: 1200px) {
+    width: 300px;
+    height: 280px;
+  }
+  @media (max-width: 1000px) {
+    width: 280px;
+    height: 250px;
+  }
+  @media (max-width: 900px) {
+    transform: rotate(4deg) !important;
+    position: relative;
+    width: 60%;
+    height: 45%;
+    margin: 20px auto;
+  }
+  @media (max-width: 700px) {
+    width: 70%;
+    height: 40%;
+    margin: 30px auto;
+  }
+  @media (max-width: 600px) {
+    width: 80%;
+    height: 43%;
+  }
+}
+
+.img-1 {
+  width: 45%;
+  position: absolute;
+  top: -90px;
+  left: -160px;
+
+  @media (max-width: 1400px) {
+    width: 50%;
+  }
+  @media (max-width: 1200px) {
+    width: 55%;
+  }
+  @media (max-width: 1000px) {
+    width: 65%;
+  }
+  @media (max-width: 768px) {
+    width: 80%;
+    top: -50px;
+  }
+  @media (max-width: 650px) {
+    width: 90%;
+    top: -50px;
+    left: -130px;
+  }
+  @media (max-width: 450px) {
+    width: 100%;
+  }
+}
+
+.img-1-clone {
+  display: none;
+  position: absolute;
+
+  @media (max-width: 900px) {
+    display: block;
+    transform: rotate(270deg);
+    width: 65%;
+    top: -110px;
+    right: -150px;
+  }
+  @media (max-width: 768px) {
+    width: 80%;
+    top: -80px;
+  }
+  @media (max-width: 550px) {
+    width: 90%;
+    top: -80px;
+  }
+  @media (max-width: 450px) {
+    width: 90%;
+    top: -50px;
+    right: -120px;
+  }
+}
+
+.img-2 {
+  position: absolute;
+  right: -170px;
+  width: 30vw;
+
+  @media (max-width: 900px) {
+    right: -120px;
+    bottom: -300px;
+  }
+  @media (max-width: 500px) {
+    right: -70px;
+  }
+}
+
+.img-3 {
+  position: absolute;
+  left: -250px;
+  width: 40vw;
+
+  @media (max-width: 900px) {
+    bottom: -200px;
+    left: -200px;
+  }
+  @media (max-width: 500px) {
+    left: -120px;
+  }
 }
 </style>
