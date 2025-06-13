@@ -6,7 +6,7 @@
   </h1>
     
     <!-- <p>Мы Вас так любим! Поэтому приглашаем стать свидетелями дня рождения нашей Семьи, который состоится </p> -->
-    <p class="subtitle" @click="isTitleVisible = true">Приглашаем на нашу свадьбу!</p>
+    <p class="subtitle">Приглашаем на нашу свадьбу!</p>
     <PhotoCard img="src/assets/we1.jpg" class="photo-card" text="Мы женимся!!!" />
 
     <img src="../assets/lemon1.png" class="img-1">

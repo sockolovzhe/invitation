@@ -19,18 +19,18 @@ import { useRoute } from 'vue-router'
 import SurveyForm from './components/SurveyForm.vue'
 
 const isLoading = ref(false)
-const audioRef =ref(null)
+const audioRef =ref<HTMLAudioElement | null>(null)
 const isPlaying = ref(false)
 
 const playMusic = () => {
   console.log('audioRef', audioRef.value)
 
   if (audioRef.value) {
-    audioRef.value.play()
+    audioRef.value?.play()
       .then(() => {
         isPlaying.value = true;
       })
-      .catch((err) => {
+      .catch((err: any) => {
         console.log('Ошибка воспроизведения:', err);
       })
   }
