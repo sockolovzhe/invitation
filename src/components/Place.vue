@@ -56,7 +56,7 @@ if (mediaQuery600.matches) {
   }
   @media (max-width: 600px) {
     width: 340px;
-    height: 290px;
+    height: 320px;
   }
 }
 
@@ -73,7 +73,7 @@ if (mediaQuery600.matches) {
     top: 320px;
   }
   @media (max-width: 600px) {
-    top: 280px;
+    top: 320px;
   }
 }
 </style>

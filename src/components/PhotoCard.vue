@@ -29,7 +29,7 @@ const props = withDefaults(defineProps<{
   align-items: center;
   background-color: rgb(250, 250, 250);
   padding: 14px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   width: 420px;
   height: 380px;
 }

@@ -1,11 +1,11 @@
 <template>
-  <div v-if="!isLoading">
+  <div v-if="!isLoading" class="loader-wrapper">
     <img src="./assets/lemon-loader.png" class="loader">
   </div>
   <main :style="{ visibility: !isLoading ? 'hidden' : 'visible'}">
     <button @click="playMusic" class="musicBtn">
       <div v-if="!isPlaying">Включить итальянскую музыку</div>
-      <div v-else>Выключить музыку</div>
+      <img v-else src="/src/assets/vynil.png" class="musicBtn__img rotating">
     </button>
     <audio ref="audioRef" autoplay loop>
       <source src="./assets/quando.mp3" type="audio/mpeg">
@@ -46,7 +46,7 @@ const playMusic = () => {
 onMounted(() => {
   setTimeout(() => {
     isLoading.value = true
-  }, 1000)
+  }, 2000)
 })
 </script>
 
@@ -58,21 +58,27 @@ main {
   z-index: 10;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
 .main-title {
   font-family: 'Dancing Script';
   font-size: 10vw;
   color: #023a6d;
 }
+
+.loader-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  margin-top: -2rem;
+}
+
 .loader {
-  width: 10%;
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  transform: translate(-50%, -50%);
+  width: 20%;
+  margin: auto;
   animation: spin 2s linear infinite;
 
   @media (max-width: 500px) {
-    width: 30%;
+    width: 35%;
   }
 }
 
@@ -86,17 +92,31 @@ main {
 }
 
 .musicBtn {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  position: fixed;
+  top: 16px;
+  left: 16px;
   z-index: 100;
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background-color: yellow;
+  background-color: rgb(255, 238, 0);
   cursor: pointer;
-  border: 2px solid rgb(240, 240, 1);
+  border: 2px solid rgba(240, 240, 1, 0.884);
   font-style: italic;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: yellow;
+  }
+
+  &__img {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 116px;
+    object-fit: contain;
+    animation: spin 3s linear infinite;
+    cursor: pointer;
+  }
 }
 </style>

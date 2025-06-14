@@ -4,10 +4,11 @@
     <span>Ciao,</span>
     <div>{{ guestName }}!</div>
   </h1>
-    <p class="subtitle">Приглашаем на нашу свадьбу!</p>
     <PhotoCard class="photo-card" text="Мы женимся!!!">
       <img src="../assets/we1.jpg" class="slot-img">
     </PhotoCard>
+    <p class="subtitle">Приглашаем на нашу свадьбу!</p>
+    <div class="date">07.09.25</div>
 
     <img src="../assets/lemon1.png" class="img-1">
     <img src="../assets/lemon1.png" class="img-1-clone">
@@ -51,27 +52,40 @@ const guestName = computed(() => {
   text-align: center;
 
   @media (max-width: 768px) {
-    padding-top: 25vh;
+    padding-top: 19vh;
   }
 }
 
 .subtitle {
+  margin-top: 30px;
   text-align: center;
   width: 100%;
   font-family: "Marck Script", cursive;
-  font-size: 5vh;
+  font-size: 4vh;
   color: #292929;
-  position: absolute;
-  bottom: 150px;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
   @media (max-width: 1500px) {
     bottom: 200px;
     font-size: 4vh;
   }
   @media (max-width: 900px) {
-    display: none;
+    margin-top: 50px;
+    font-size: 24px;
+  }
+}
+
+.date {
+  text-align: center;
+  font-family: 'Dancing Script';
+  font-size: 70px;
+  color: #023a6d;
+
+  @media (max-width: 900px) {
+    font-size: 50px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 40px;
   }
 }
 
@@ -100,8 +114,8 @@ const guestName = computed(() => {
   @media (max-width: 900px) {
     transform: rotate(4deg) !important;
     position: relative;
-    width: 450px;
-    height: 400px;
+    width: 390px;
+    height: 330px;
     margin: 20px auto;
   }
   @media (max-width: 700px) {
@@ -111,10 +125,13 @@ const guestName = computed(() => {
   }
   @media (max-width: 600px) {
     width: 80%;
-    height: 330px;
+    height: 340px;
   }
   @media (max-width: 500px) {
-    height: 40vh;
+    height: 300px;
+  }
+  @media (max-width: 450px) {
+    height: 270px;
   }
 }
 
@@ -192,6 +209,15 @@ const guestName = computed(() => {
   position: absolute;
   left: -250px;
   width: 40vw;
+  bottom: -1000px;
+
+  @media (max-width: 1600px) {
+    bottom: -700px;
+  }
+
+  @media (max-width: 1400px) {
+    bottom: -500px;
+  }
 
   @media (max-width: 900px) {
     bottom: -200px;
