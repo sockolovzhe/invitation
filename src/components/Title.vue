@@ -43,6 +43,7 @@ const guestName = computed(() => {
 .title-wrapper {
   position: relative;
   height: 100vh;
+  min-height: 750px;
 }
 .main-title {
   padding-top: 15vh;
@@ -224,7 +225,7 @@ const guestName = computed(() => {
     left: -200px;
   }
   @media (max-width: 500px) {
-    bottom: -100px;
+    bottom: -120px;
     left: -50px;
   }
 }

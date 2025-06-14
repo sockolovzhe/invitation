@@ -6,7 +6,7 @@
     <button @click="playMusic" class="musicBtn">
       <img src="/src/assets/vynil.png" class="musicBtn__img" :class="{ 'rotating' : isPlaying }">
     </button>
-    <audio ref="audioRef" autoplay loop>
+    <audio ref="audioRef" loop>
       <source src="./assets/quando.mp3" type="audio/mpeg">
     </audio>
     <router-view></router-view>
