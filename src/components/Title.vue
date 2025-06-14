@@ -53,7 +53,7 @@ const guestName = computed(() => {
   text-align: center;
 
   @media (max-width: 768px) {
-    padding-top: 16vh;
+    padding-top: 11vh;
   }
 }
 
@@ -71,7 +71,7 @@ const guestName = computed(() => {
   }
   @media (max-width: 900px) {
     margin-top: 30px;
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
@@ -153,15 +153,20 @@ const guestName = computed(() => {
   }
   @media (max-width: 768px) {
     width: 80%;
-    top: -50px;
+    top: -140px;
   }
   @media (max-width: 650px) {
     width: 90%;
-    top: -50px;
+    top: -160px;
     left: -130px;
+  }
+  @media (max-width: 550px) {
+    width: 90%;
+    top: -120px;
   }
   @media (max-width: 450px) {
     width: 100%;
+    top: -100px;
   }
 }
 
@@ -174,20 +179,20 @@ const guestName = computed(() => {
     transform: rotate(270deg);
     width: 65%;
     top: -110px;
-    right: -150px;
+    right: -170px;
   }
   @media (max-width: 768px) {
     width: 80%;
-    top: -80px;
+    top: -160px;
   }
   @media (max-width: 550px) {
     width: 90%;
-    top: -80px;
+    top: -120px;
   }
   @media (max-width: 450px) {
     width: 90%;
-    top: -50px;
-    right: -120px;
+    top: -90px;
+    right: -140px;
   }
 }
 
