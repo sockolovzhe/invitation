@@ -28,8 +28,8 @@ if (mediaQuery800.matches) {
   mapHeight.value = 260
 }
 if (mediaQuery600.matches) {
-  mapWidth.value = 310
-  mapHeight.value = 220
+  mapWidth.value = 280
+  mapHeight.value = 210
 }
 </script>
 
@@ -55,8 +55,8 @@ if (mediaQuery600.matches) {
     height: 340px;
   }
   @media (max-width: 600px) {
-    width: 340px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -73,7 +73,7 @@ if (mediaQuery600.matches) {
     top: 320px;
   }
   @media (max-width: 600px) {
-    top: 320px;
+    top: 280px;
   }
 }
 </style>

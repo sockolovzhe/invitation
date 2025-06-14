@@ -4,8 +4,7 @@
   </div>
   <main :style="{ visibility: !isLoading ? 'hidden' : 'visible'}">
     <button @click="playMusic" class="musicBtn">
-      <div v-if="!isPlaying">Включить итальянскую музыку</div>
-      <img v-else src="/src/assets/vynil.png" class="musicBtn__img rotating">
+      <img src="/src/assets/vynil.png" class="musicBtn__img" :class="{ 'rotating' : isPlaying }">
     </button>
     <audio ref="audioRef" autoplay loop>
       <source src="./assets/quando.mp3" type="audio/mpeg">
@@ -99,24 +98,20 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background-color: rgb(255, 238, 0);
-  cursor: pointer;
-  border: 2px solid rgba(240, 240, 1, 0.884);
-  font-style: italic;
+  border: none;
   box-sizing: border-box;
-
-  &:hover {
-    background-color: yellow;
-  }
 
   &__img {
     position: absolute;
     top: -10px;
     left: -10px;
-    width: 116px;
+    width: 119px;
     object-fit: contain;
-    animation: spin 3s linear infinite;
     cursor: pointer;
+  }
+
+  .rotating {
+    animation: spin 3s linear infinite;
   }
 }
 </style>

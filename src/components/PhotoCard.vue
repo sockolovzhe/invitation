@@ -36,12 +36,13 @@ const props = withDefaults(defineProps<{
 
 .card-text {
   font-size: 3vh;
-  font-family: "Marck Script", cursive;
+  font-family: "Caveat", cursive;
   min-height: 40px;
   padding-top: 5px;
+  color: #023a6d;
 
   @media (max-width: 500px) {
-    font-size: 3.5vh;
+    font-size: 30px;
   }
 }
 

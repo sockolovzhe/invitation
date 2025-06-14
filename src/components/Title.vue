@@ -60,17 +60,17 @@ const guestName = computed(() => {
   margin-top: 30px;
   text-align: center;
   width: 100%;
-  font-family: "Marck Script", cursive;
-  font-size: 4vh;
-  color: #292929;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 46px;
+  color: #4a6685;
 
   @media (max-width: 1500px) {
     bottom: 200px;
-    font-size: 4vh;
+    font-size: 36px;
   }
   @media (max-width: 900px) {
-    margin-top: 50px;
-    font-size: 24px;
+    margin-top: 30px;
+    font-size: 26px;
   }
 }
 
