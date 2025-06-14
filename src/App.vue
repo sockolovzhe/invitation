@@ -45,7 +45,7 @@ const playMusic = () => {
 onMounted(() => {
   setTimeout(() => {
     isLoading.value = true
-  }, 2000)
+  }, 2500)
 })
 </script>
 
@@ -105,7 +105,7 @@ main {
     position: absolute;
     top: -10px;
     left: -10px;
-    width: 119px;
+    width: 120px;
     object-fit: contain;
     cursor: pointer;
   }

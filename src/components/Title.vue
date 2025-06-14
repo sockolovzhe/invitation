@@ -43,7 +43,7 @@ const guestName = computed(() => {
 .title-wrapper {
   position: relative;
   height: 100vh;
-  min-height: 750px;
+  min-height: 800px;
 }
 .main-title {
   padding-top: 15vh;
@@ -53,7 +53,7 @@ const guestName = computed(() => {
   text-align: center;
 
   @media (max-width: 768px) {
-    padding-top: 19vh;
+    padding-top: 16vh;
   }
 }
 
@@ -63,7 +63,7 @@ const guestName = computed(() => {
   width: 100%;
   font-family: "Comfortaa", sans-serif;
   font-size: 46px;
-  color: #4a6685;
+  color: #3b3f43;
 
   @media (max-width: 1500px) {
     bottom: 200px;
@@ -201,7 +201,7 @@ const guestName = computed(() => {
     bottom: -300px;
   }
   @media (max-width: 500px) {
-    bottom: -150px;
+    bottom: -100px;
     right: -50px;
   }
 }
@@ -225,7 +225,7 @@ const guestName = computed(() => {
     left: -200px;
   }
   @media (max-width: 500px) {
-    bottom: -120px;
+    bottom: -80px;
     left: -50px;
   }
 }
