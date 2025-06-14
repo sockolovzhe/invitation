@@ -1,9 +1,9 @@
 <template>
   <div class="card" :style="{transform: `rotate(${props.rotate}deg)`}">
     <div class="img-wrapper" :style="{ width: `${props.width}px`, height: `${props.height}px` }">
-      <img :src="props.img">
+      <slot></slot>
     </div>
-    <p class="card-text" v-if="props.text">{{ props.text }}</p>
+    <p class="card-text" v-if="props.text" v-html="props.text"></p>
   </div>
 </template>
 
@@ -11,13 +11,12 @@
 import { computed } from "vue"
 
 const props = withDefaults(defineProps<{
-  img: string
   width?: number
   height?: number
   rotate?: number
   text?: string
 }>(), {
-  rotate: 15
+  rotate: 5
 })
 
 </script>
@@ -37,11 +36,12 @@ const props = withDefaults(defineProps<{
 
 .card-text {
   font-size: 3vh;
-  font-family: "Nunito", sans-serif;
+  font-family: "Marck Script", cursive;
   min-height: 40px;
+  padding-top: 5px;
 
   @media (max-width: 500px) {
-    font-size: 4vh;
+    font-size: 3.5vh;
   }
 }
 

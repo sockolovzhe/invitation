@@ -4,10 +4,10 @@
     <span>Ciao,</span>
     <div>{{ guestName }}!</div>
   </h1>
-    
-    <!-- <p>Мы Вас так любим! Поэтому приглашаем стать свидетелями дня рождения нашей Семьи, который состоится </p> -->
     <p class="subtitle">Приглашаем на нашу свадьбу!</p>
-    <PhotoCard img="src/assets/we1.jpg" class="photo-card" text="Мы женимся!!!" />
+    <PhotoCard class="photo-card" text="Мы женимся!!!">
+      <img src="../assets/we1.jpg" class="slot-img">
+    </PhotoCard>
 
     <img src="../assets/lemon1.png" class="img-1">
     <img src="../assets/lemon1.png" class="img-1-clone">
@@ -58,8 +58,7 @@ const guestName = computed(() => {
 .subtitle {
   text-align: center;
   width: 100%;
-  // font-family: "Marck Script", cursive;
-  font-family: "Nunito", sans-serif;
+  font-family: "Marck Script", cursive;
   font-size: 5vh;
   color: #292929;
   position: absolute;
@@ -80,6 +79,7 @@ const guestName = computed(() => {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 20;
 
   @media (max-width: 1600px) {
     width: 380px;
@@ -100,18 +100,21 @@ const guestName = computed(() => {
   @media (max-width: 900px) {
     transform: rotate(4deg) !important;
     position: relative;
-    width: 60%;
-    height: 45%;
+    width: 450px;
+    height: 400px;
     margin: 20px auto;
   }
   @media (max-width: 700px) {
-    width: 70%;
-    height: 40%;
+    width: 400px;
+    height: 350px;
     margin: 30px auto;
   }
   @media (max-width: 600px) {
     width: 80%;
-    height: 43%;
+    height: 330px;
+  }
+  @media (max-width: 500px) {
+    height: 40vh;
   }
 }
 
@@ -180,7 +183,8 @@ const guestName = computed(() => {
     bottom: -300px;
   }
   @media (max-width: 500px) {
-    right: -70px;
+    bottom: -150px;
+    right: -50px;
   }
 }
 
@@ -194,7 +198,8 @@ const guestName = computed(() => {
     left: -200px;
   }
   @media (max-width: 500px) {
-    left: -120px;
+    bottom: -100px;
+    left: -50px;
   }
 }
 </style>
