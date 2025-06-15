@@ -38,9 +38,12 @@ if (mediaQuery600.matches) {
   position: relative;
   display: flex;
   justify-content: center;
+  height: 500px;
 
   @media (max-width: 800px) {
     flex-direction: column;
+    justify-content: start;
+    height: 700px;
   }
 }
 
@@ -49,11 +52,11 @@ if (mediaQuery600.matches) {
     height: 340px;
   }
   @media (max-width: 800px) {
-    height: 350px;
+    height: 370px;
   }
-  @media (max-width: 700px) {
-    height: 340px;
-  }
+  // @media (max-width: 700px) {
+  //   height: 340px;
+  // }
   @media (max-width: 600px) {
     width: 300px;
     height: 300px;

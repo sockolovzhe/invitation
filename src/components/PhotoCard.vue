@@ -25,7 +25,6 @@ const props = withDefaults(defineProps<{
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   background-color: rgb(250, 250, 250);
   padding: 14px;
@@ -35,10 +34,11 @@ const props = withDefaults(defineProps<{
 }
 
 .card-text {
-  font-size: 3vh;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 34px;
   font-family: "Caveat", cursive;
-  min-height: 40px;
-  padding-top: 5px;
   color: #023a6d;
 
   @media (max-width: 500px) {

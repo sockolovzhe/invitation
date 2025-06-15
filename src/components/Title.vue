@@ -149,7 +149,7 @@ const guestName = computed(() => {
     width: 55%;
   }
   @media (max-width: 1000px) {
-    width: 65%;
+    width: 58%;
   }
   @media (max-width: 768px) {
     width: 80%;
@@ -177,7 +177,7 @@ const guestName = computed(() => {
   @media (max-width: 900px) {
     display: block;
     transform: rotate(270deg);
-    width: 65%;
+    width: 60%;
     top: -110px;
     right: -170px;
   }

@@ -11,6 +11,8 @@
     </audio>
     <router-view></router-view>
     <Place />
+    <Timing />
+    <Look />
     <SurveyForm />
   </main>
 </template>
@@ -18,8 +20,10 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
+import Timing from './components/Timing.vue'
 import Place from './components/Place.vue'
 import SurveyForm from './components/SurveyForm.vue'
+import Look from './components/Look.vue'
 
 const isLoading = ref(false)
 const audioRef =ref<HTMLAudioElement | null>(null)
@@ -65,7 +69,8 @@ main {
 }
 
 .loader-wrapper {
-  width: 100%;
+  position: fixed;
+  width: 85%;
   height: 100vh;
   display: flex;
   margin-top: -2rem;
