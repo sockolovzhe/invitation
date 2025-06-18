@@ -24,7 +24,7 @@ import PhotoCard from "@/components/PhotoCard.vue"
 import { guestTitles } from '../data/guestTitles'
 
 const route = useRoute()
-const currentPath = computed(() => route.params.userId)
+const currentPath = computed(() => route.params.userId as string)
 </script>
 
 <style scoped lang="scss">

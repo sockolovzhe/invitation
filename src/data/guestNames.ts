@@ -1,4 +1,4 @@
-export const guestNames = {
+export const guestNames: Record<string, string> = {
   anna: 'Аня',
   roman: 'Рома',
   arkadiy: 'Аркадий',

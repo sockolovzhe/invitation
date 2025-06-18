@@ -37,7 +37,7 @@ import { useRoute } from 'vue-router'
 import { guestNames } from '../data/guestNames'
 
 const route = useRoute()
-const currentPath = computed(() => route.params.userId)
+const currentPath = computed(() => route.params.userId as string)
 
 const guestsArray = computed(() => currentPath.value?.split('&'))
 
@@ -73,7 +73,7 @@ const formQuestions = [
   }
 ]
 
-const form = reactive({
+const form: any = reactive({
   attending: null,
   congratulate: null,
   drinking: null,
