@@ -1,1 +1,0 @@
-export const lookColors = ['#ffea8b', '#f2e1c8', '#becfa7', '#9eb383', '#b0c8da']

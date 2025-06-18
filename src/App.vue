@@ -13,6 +13,7 @@
     <Place />
     <Timing />
     <Look />
+    <Wishes />
     <SurveyForm />
   </main>
 </template>
@@ -24,6 +25,7 @@ import Timing from './components/Timing.vue'
 import Place from './components/Place.vue'
 import SurveyForm from './components/SurveyForm.vue'
 import Look from './components/Look.vue'
+import Wishes from './components/Wishes.vue'
 
 const isLoading = ref(false)
 const audioRef =ref<HTMLAudioElement | null>(null)

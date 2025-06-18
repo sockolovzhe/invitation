@@ -3,7 +3,7 @@
     <ul class="timing">
       <li v-for="(description, time) in timing" :key="time">
         <div class="time">{{ time }}</div>
-        <div class="description">{{ description }}</div>
+        <div class="description" v-html="description" />
       </li>
     </ul>
     <img src="../assets/lemon4.png" class="lemon-left">
@@ -13,10 +13,10 @@
 
 <script setup lang="ts">
 const timing = {
-  '16:00': 'Сбор гостей + фуршет',
-  '16:30': 'Выездная регистрация',
-  '17:30': 'Вечеринка',
-  '23:30': 'Завершение вечера'
+  '16:00': 'Сбор гостей + фуршет &#129346;',
+  '16:45': 'Выездная регистрация &#129333;&#128112;',
+  '17:30': 'Вечеринка 	&#128378;&#128131;',
+  '23:30': 'Завершение вечера &#128171;'
 }
 </script>
 
@@ -29,7 +29,11 @@ const timing = {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 3vw;
+
+  @media (max-width: 600px) {
+    gap: 4vw;
+  }
 }
 
 .time {
@@ -46,7 +50,7 @@ const timing = {
 .description {
   font-family: "Comfortaa", sans-serif;
   font-size: 2vw;
-  color: #3b3f43;
+  color: #323538;
 
   @media (max-width: 600px) {
     font-size: 4vw;

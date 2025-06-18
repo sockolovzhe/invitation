@@ -1,5 +1,5 @@
 <template>
-  <div class="card" :style="{transform: `rotate(${props.rotate}deg)`}">
+  <div class="card" :style="{transform: `rotate(${props.rotate}deg)`, height: cardHeight}">
     <div class="img-wrapper" :style="{ width: `${props.width}px`, height: `${props.height}px` }">
       <slot></slot>
     </div>
@@ -15,6 +15,7 @@ const props = withDefaults(defineProps<{
   height?: number
   rotate?: number
   text?: string
+  cardHeight?: number | string
 }>(), {
   rotate: 5
 })
@@ -34,10 +35,12 @@ const props = withDefaults(defineProps<{
 }
 
 .card-text {
+  text-align: center;
   display: flex;
   align-items: center;
   height: 100%;
   font-size: 34px;
+  line-height: 34px;
   font-family: "Caveat", cursive;
   color: #023a6d;
 

@@ -2,7 +2,7 @@
   <section class="title-wrapper">
   <h1 class="main-title">
     <span>Ciao,</span>
-    <div>{{ guestName }}!</div>
+    <div>{{ guestTitles[currentPath] }}!</div>
   </h1>
     <PhotoCard class="photo-card" text="Мы женимся!!!">
       <img src="../assets/we1.jpg" class="slot-img">
@@ -21,22 +21,10 @@
 import { computed, onMounted, ref } from "vue"
 import { useRoute } from "vue-router"
 import PhotoCard from "@/components/PhotoCard.vue"
+import { guestTitles } from '../data/guestTitles'
 
 const route = useRoute()
 const currentPath = computed(() => route.params.userId)
-
-const guestName = computed(() => {
-  switch(currentPath.value) {
-    case ('roman&anna'):
-      return 'Roman & Anna'
-    case ('dima&sasha'):
-      return 'Dima & Sasha'
-    case ('lesha&lisa'):
-      return 'Lesha & Lisa'
-    default: 
-      return 'дорогие гости'
-  }
-})
 </script>
 
 <style scoped lang="scss">
@@ -48,7 +36,7 @@ const guestName = computed(() => {
 .main-title {
   padding-top: 15vh;
   font-family: 'Dancing Script';
-  font-size: 12vw;
+  font-size: 11vw;
   color: #023a6d;
   text-align: center;
 
@@ -62,8 +50,8 @@ const guestName = computed(() => {
   text-align: center;
   width: 100%;
   font-family: "Comfortaa", sans-serif;
-  font-size: 46px;
-  color: #3b3f43;
+  font-size: 40px;
+  color: #323538;
 
   @media (max-width: 1500px) {
     bottom: 200px;
@@ -71,7 +59,7 @@ const guestName = computed(() => {
   }
   @media (max-width: 900px) {
     margin-top: 30px;
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
@@ -86,7 +74,7 @@ const guestName = computed(() => {
   }
 
   @media (max-width: 500px) {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
@@ -139,7 +127,7 @@ const guestName = computed(() => {
 .img-1 {
   width: 45%;
   position: absolute;
-  top: -90px;
+  top: -100px;
   left: -160px;
 
   @media (max-width: 1400px) {

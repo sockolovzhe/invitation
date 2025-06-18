@@ -32,7 +32,8 @@
 
 <script setup lang="ts">
 import PhotoCard from "@/components/PhotoCard.vue"
-import { lookColors } from '../utils/data'
+
+const lookColors = ['#ffea8b', '#f2e1c8', '#becfa7', '#9eb383', '#b0c8da']
 </script>
 
 <style scoped lang="scss">
@@ -47,7 +48,7 @@ import { lookColors } from '../utils/data'
   text-align: center;
   font-family: "Comfortaa", sans-serif;
   font-size: 2vw;
-  color: #3b3f43;
+  color: #323538;
 
   @media (max-width: 600px) {
     margin-top: 20%;
@@ -133,11 +134,11 @@ import { lookColors } from '../utils/data'
 
 .card3 {
   transform: rotate(5deg) !important;
-  position: relative;
-  top: -70px;
-  left: -10px;
 
   @media (max-width: 800px) {
+    position: relative;
+    top: -70px;
+    left: -10px;
     transform: rotate(-8deg) !important;
   }
 }
@@ -157,30 +158,28 @@ import { lookColors } from '../utils/data'
 
 .lemon-right {
   position: absolute;
-  right: -160px;
-  bottom: -350px;
+  right: -200px;
+  bottom: -400px;
   transform: rotate(200deg);
 
   @media (max-width: 1600px) {
-    right: -300px;
+    right: -270px;
   }
   @media (max-width: 1400px) {
     width: 80%;
-    bottom: -300px;
   }
   @media (max-width: 1300px) {
     width: 75%;
-    bottom: -250px;
+    bottom: -300px;
     right: -220px;
   }
   @media (max-width: 1200px) {
     width: 75%;
-    bottom: -200px;
     right: -170px;
   }
   @media (max-width: 1000px) {
     width: 70%;
-    bottom: -140px;
+    bottom: -200px;
     right: -120px;
   }
   @media (max-width: 800px) {
