@@ -74,7 +74,7 @@ if (mediaQuery600.matches) {
 
   @media (max-width: 800px) {
     position: absolute;
-    right: 0;
+    right: 7px;
     top: 300px;
   }
   @media (max-width: 600px) {
@@ -86,7 +86,7 @@ if (mediaQuery600.matches) {
   @media (max-width: 800px) {
     transform: rotate(4deg) !important;
     position: absolute;
-    left: 0;
+    left: 14px;
     top: 0;
   }
 }

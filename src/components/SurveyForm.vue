@@ -264,14 +264,16 @@ input[type="radio"] {
   }
 
   &:checked::after {
-    min-width: 30px;
+    min-width: 28px;
     min-height: 28px;
     position: absolute;
-    top: 55%;
-    left: 70%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20"><text y="20" font-size="20">🍋</text></svg>');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
