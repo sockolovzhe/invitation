@@ -10,6 +10,7 @@
       <source src="./assets/quando.mp3" type="audio/mpeg">
     </audio>
     <router-view></router-view>
+    <Title v-if="!currentPath" />
     <Place />
     <Timing />
     <Look />
@@ -22,12 +23,16 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
+import Title from './components/Title.vue'
 import Timing from './components/Timing.vue'
 import Place from './components/Place.vue'
 import SurveyForm from './components/SurveyForm.vue'
 import Look from './components/Look.vue'
 import Wishes from './components/Wishes.vue'
 import Details from './components/Details.vue'
+
+const route = useRoute()
+const currentPath = computed(() => route.params.userId as string)
 
 const isLoading = ref(false)
 const audioRef =ref<HTMLAudioElement | null>(null)

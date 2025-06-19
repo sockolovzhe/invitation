@@ -56,7 +56,7 @@ import PhotoCard from "@/components/PhotoCard.vue"
   }
   @media (max-width: 600px) {
     gap: 3vw;
-    width: 98%;
+    width: 96%;
     font-size: 5vw;
     line-height: 6.5vw;
   }

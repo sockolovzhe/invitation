@@ -1,7 +1,7 @@
 <template>
   <section class="look">
     <h3 class="look__title">Dress code</h3>
-    <p class="look__text">Мы очень старались сделать праздник красивым, пожалуйста, поддержите цветовую гамму нашей свадьбы:</p>
+    <p class="look__text">Мы долго готовили наш праздник, пожалуйста, поддержите итальнский стиль нашей свадьбы в пастельных оттенках:</p>
     <ul class="colors-list" :style="{ gridTemplateColumns: `repeat(${lookColors.length}, 1fr)` }">
       <li
         v-for="(color, index) in lookColors"

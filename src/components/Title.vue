@@ -2,7 +2,7 @@
   <section class="title-wrapper">
   <h1 class="main-title">
     <span>Ciao,</span>
-    <div>{{ guestTitles[currentPath] }}!</div>
+    <div>{{ guestTitles[currentPath] ?? "Dear guests" }}!</div>
   </h1>
     <PhotoCard class="photo-card" text="Мы женимся!!!">
       <img src="../assets/we1.jpg" class="slot-img">

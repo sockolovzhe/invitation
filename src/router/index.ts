@@ -1,5 +1,4 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-// @ts-ignore
 import Title from '../components/Title.vue'
 
 const router = createRouter({
