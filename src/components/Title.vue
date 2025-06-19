@@ -34,9 +34,9 @@ const currentPath = computed(() => route.params.userId as string)
   min-height: 800px;
 }
 .main-title {
-  padding-top: 15vh;
+  padding-top: 13vh;
   font-family: 'Dancing Script';
-  font-size: 11vw;
+  font-size: 12vw;
   color: #023a6d;
   text-align: center;
 
@@ -59,7 +59,8 @@ const currentPath = computed(() => route.params.userId as string)
   }
   @media (max-width: 900px) {
     margin-top: 30px;
-    font-size: 18px;
+    margin-bottom: 6px;
+    font-size: 19px;
   }
 }
 
@@ -74,7 +75,7 @@ const currentPath = computed(() => route.params.userId as string)
   }
 
   @media (max-width: 500px) {
-    font-size: 36px;
+    font-size: 40px;
   }
 }
 

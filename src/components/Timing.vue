@@ -42,8 +42,11 @@ const timing = {
   font-size: 5vw;
   color: #023a6d;
 
+  @media (max-width: 1000px) {
+    font-size: 8vw;
+  }
   @media (max-width: 600px) {
-    font-size: 7vw;
+    font-size: 10vw;
   }
 }
 
@@ -52,8 +55,14 @@ const timing = {
   font-size: 2vw;
   color: #323538;
 
+  @media (max-width: 1000px) {
+    font-size: 2.7vw;
+  }
+  @media (max-width: 800px) {
+    font-size: 3vw;
+  }
   @media (max-width: 600px) {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
@@ -113,25 +122,21 @@ const timing = {
     right: -300px;
   }
   @media (max-width: 1000px) {
-    top: -50px;
-    right: -300px;
-  }
-  @media (max-width: 1000px) {
-    top: -100px;
-    right: -200px;
+    top: -40px;
+    right: -250px;
   }
   @media (max-width: 800px) {
     top: 200px;
     right: -200px;
     transform: rotate(240deg);
   }
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
     top: 150px;
-    right: -150px;
+    right: -180px;
     transform: rotate(260deg);
   }
   @media (max-width: 600px) {
-    top: 250px;
+    top: 200px;
     right: -150px;
   }
   @media (max-width: 500px) {

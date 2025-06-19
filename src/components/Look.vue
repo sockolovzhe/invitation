@@ -58,14 +58,28 @@ const lookColors = ['#ffea8b', '#f2e1c8', '#becfa7', '#9eb383', '#b0c8da']
     font-family: 'Dancing Script';
     font-size: 8vw;
     color: #023a6d;
+
+    @media (max-width: 1000px) {
+      font-size: 9vw;
+    }
+    @media (max-width: 600px) {
+      font-size: 12vw;
+    }
   }
 
   &__text {
     width: 67%;
 
+    @media (max-width: 1000px) {
+      font-size: 2.7vw;
+      width: 82%;
+    }
+    @media (max-width: 800px) {
+      font-size: 3vw;
+    }
     @media (max-width: 600px) {
-      width: 90%;
-      font-size: 4vw;
+      width: 96%;
+      font-size: 5vw;
     }
   }
 }
@@ -81,13 +95,17 @@ const lookColors = ['#ffea8b', '#f2e1c8', '#becfa7', '#9eb383', '#b0c8da']
   }
 
   &__item {
-    width: 6vw;
-    height: 6vw;
+    width: 7vw;
+    height: 7vw;
     border-radius: 100%;
 
-    @media (max-width: 600px) {
+    @media (max-width: 1000px) {
       width: 9vw;
       height: 9vw;
+    }
+    @media (max-width: 600px) {
+      width: 12vw;
+      height: 12vw;
     }
   }
 }
@@ -107,7 +125,7 @@ const lookColors = ['#ffea8b', '#f2e1c8', '#becfa7', '#9eb383', '#b0c8da']
   height: auto;
 
   @media (max-width: 800px) {
-    width: 55vw;
+    width: 65vw;
   }
 }
 
@@ -151,7 +169,7 @@ const lookColors = ['#ffea8b', '#f2e1c8', '#becfa7', '#9eb383', '#b0c8da']
 
   @media (max-width: 800px) {
     width: 60vw;
-    top: 300px;
+    top: 340px;
     display: block;
   }
 }

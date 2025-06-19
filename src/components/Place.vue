@@ -38,8 +38,16 @@ if (mediaQuery600.matches) {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 500px;
+  align-items: center;
+  height: 700px;
+  margin-top: 100px;
 
+  @media (max-width: 1650px) {
+    height: 500px;
+  }
+  @media (max-width: 1400px) {
+    height: 400px;
+  }
   @media (max-width: 800px) {
     flex-direction: column;
     justify-content: start;

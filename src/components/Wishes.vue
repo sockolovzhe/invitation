@@ -1,14 +1,13 @@
 <template>
   <section class="wishes">
     <h3 class="wishes__title">Wishes</h3>
-    <p>Мы знаем, как вы за нас рады, и будем счастливы, если вы захватите с собой отличное настроение и слезы умиления!</p>
-    &#127819;
-    <p>Будем рады подаркам в конвертах для осуществления нашей мечты - поездки в Японию.</p>
+    <p>Мы очень ценим Вашу заботу и внимание и будем рады подаркам в конвертах для осуществления нашей мечты - поездки в Японию.</p>
     &#127819;
     <div class="flowers">
-      <p>Вы можете порадовать нас букетом, сделав вклад в цветочную подписку, перейдя по QR-коду или</p>
+      <p>Захватите с собой отличное настроение и слезы умиления, а порадовать нас букетом Вы можете, сделав вклад в цветочную подписку, перейдя по QR-коду или</p>
       <a href="https://floryberry.ru/sokolovi" target="_blank">по этой ссылке</a>.
-      <p>Так мы будем наслаждаться цветами не только в день свадьбы, но и долго после, с теплом и любовью вспоминая Вас&#128155;</p>
+      <p>Так мы будем наслаждаться цветами не в день свадьбы, а после, с теплом и любовью вспоминая Вас</p>
+      &#128155;
     </div>
 
     <img src="../assets/lemon1.png" class="lemon">
@@ -44,14 +43,18 @@ import PhotoCard from "@/components/PhotoCard.vue"
   gap: 2vw;
   color: #323538;
 
+  @media (max-width: 1000px) {
+    font-size: 2.7vw;
+    width: 88%;
+  }
   @media (max-width: 800px) {
     margin-top: 15vw;
+    font-size: 3vw;
   }
-
   @media (max-width: 600px) {
     gap: 3vw;
-    width: 90%;
-    font-size: 4vw;
+    width: 96%;
+    font-size: 5vw;
   }
 
   a {
@@ -63,6 +66,13 @@ import PhotoCard from "@/components/PhotoCard.vue"
     font-size: 8vw;
     color: #023a6d;
     margin-bottom: 1vw;
+
+    @media (max-width: 1000px) {
+      font-size: 9vw;
+    }
+    @media (max-width: 600px) {
+      font-size: 12vw;
+    }
   }
 }
 
@@ -93,6 +103,7 @@ import PhotoCard from "@/components/PhotoCard.vue"
     left: -300px;
   }
   @media (max-width: 1000px) {
+    width: 80%;
     top: -300px;
     left: -250px;
   }
@@ -103,7 +114,7 @@ import PhotoCard from "@/components/PhotoCard.vue"
   @media (max-width: 800px) {
     width: 150%;
     top: -100px;
-    left: -530px;
+    left: -670px;
     transform: rotate(-30deg);
   }
   @media (max-width: 700px) {
@@ -129,7 +140,7 @@ import PhotoCard from "@/components/PhotoCard.vue"
   margin-top: 3vw;
 
   @media (max-width: 600px) {
-    width: 75%;
+    width: 85%;
     margin-top: 40px;
     flex-direction: column;
     align-items: center;

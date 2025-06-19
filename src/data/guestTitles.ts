@@ -10,11 +10,10 @@ export const guestTitles: Record<string, string> = {
   'slava&lera': 'Slava & Lera',
   'tonya&vova': 'Tonya&Vova',
   'artem': 'Artem',
-  'roma': 'Roma',
-
+  'roman': 'Roman',
 
   'alexey&natalia': 'Alexey & Natalia',
-  'ulya': 'Ulya',
+  'yuliya': 'Yuliya',
   'ludmila&victor': 'Ludmila & Victor',
   'sergey&galina': 'Sergey & Galina',
   'dima&sasha': 'Dima & Sasha',
