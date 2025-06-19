@@ -42,19 +42,23 @@ import PhotoCard from "@/components/PhotoCard.vue"
   flex-direction: column;
   gap: 2vw;
   color: #323538;
+  line-height: 2.4vw;
 
   @media (max-width: 1000px) {
     font-size: 2.7vw;
     width: 88%;
+    line-height: 3.3vw;
   }
   @media (max-width: 800px) {
     margin-top: 15vw;
     font-size: 3vw;
+    line-height: 3.6vw;
   }
   @media (max-width: 600px) {
     gap: 3vw;
-    width: 96%;
+    width: 98%;
     font-size: 5vw;
+    line-height: 6.5vw;
   }
 
   a {
@@ -65,7 +69,7 @@ import PhotoCard from "@/components/PhotoCard.vue"
     font-family: 'Dancing Script';
     font-size: 8vw;
     color: #023a6d;
-    margin-bottom: 1vw;
+    margin-bottom: 5vw;
 
     @media (max-width: 1000px) {
       font-size: 9vw;

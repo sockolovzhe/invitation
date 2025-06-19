@@ -54,15 +54,18 @@ const timing = {
   font-family: "Comfortaa", sans-serif;
   font-size: 2vw;
   color: #323538;
+  line-height: 4vw;
 
   @media (max-width: 1000px) {
     font-size: 2.7vw;
+    line-height: 5vw;
   }
   @media (max-width: 800px) {
     font-size: 3vw;
   }
   @media (max-width: 600px) {
     font-size: 5vw;
+    line-height: 10vw;
   }
 }
 
@@ -136,10 +139,19 @@ const timing = {
     transform: rotate(260deg);
   }
   @media (max-width: 600px) {
-    top: 200px;
+    top: 550px;
     right: -150px;
   }
   @media (max-width: 500px) {
+    top: 470px;
+    right: -150px;
+  }
+  @media (max-width: 450px) {
+    top: 410px;
+    right: -130px;
+  }
+  @media (max-width: 400px) {
+    top: 370px;
     right: -120px;
   }
 }

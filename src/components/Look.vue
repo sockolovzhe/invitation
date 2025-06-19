@@ -69,17 +69,21 @@ const lookColors = ['#ffea8b', '#f2e1c8', '#becfa7', '#9eb383', '#b0c8da']
 
   &__text {
     width: 67%;
+    line-height: 2.4vw;
 
     @media (max-width: 1000px) {
       font-size: 2.7vw;
+      line-height: 3.3vw;
       width: 82%;
     }
     @media (max-width: 800px) {
       font-size: 3vw;
+      line-height: 3.6vw;
     }
     @media (max-width: 600px) {
       width: 96%;
       font-size: 5vw;
+      line-height: 6.5vw;
     }
   }
 }

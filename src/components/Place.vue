@@ -3,7 +3,7 @@
     <PhotoCard text="Место проведения:<br> Экопарк Sun&Voda" class="place-card place-img">
       <img src="../assets/place.jpeg" class="slot-img">
     </PhotoCard>
-    <PhotoCard text="Здесь будет свадьба" class="place-card place-map">
+    <PhotoCard text="Точка на карте" class="place-card place-map">
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2fcab8692d58af181689fca0fa87444c9b7c752b9a248fce69df6ec6a537f969&amp;source=constructor" :width="mapWidth" :height="mapHeight" frameborder="0"></iframe>
     </PhotoCard>
   </section>
@@ -49,6 +49,7 @@ if (mediaQuery600.matches) {
     height: 400px;
   }
   @media (max-width: 800px) {
+    margin-top: 0;
     flex-direction: column;
     justify-content: start;
     height: 700px;

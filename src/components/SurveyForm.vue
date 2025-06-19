@@ -164,7 +164,7 @@ const handleSubmit = async () => {
 
   @media (max-width: 1000px) {
     font-size: 2.7vw;
-    width: 73%;
+    width: 90%;
   }
   @media (max-width: 800px) {
     font-size: 3vw;
@@ -185,6 +185,13 @@ const handleSubmit = async () => {
 .question-title {
   color: #023a6d;
   text-align: start;
+
+  @media (max-width: 800px) {
+    line-height: 3.6vw;
+  }
+  @media (max-width: 600px) {
+    line-height: 6.5vw;
+  }
 }
 
 .question-guestName {
@@ -257,8 +264,8 @@ input[type="radio"] {
   }
 
   &:checked::after {
-    width: 30px;
-    height: 28px;
+    min-width: 30px;
+    min-height: 28px;
     position: absolute;
     top: 55%;
     left: 70%;
@@ -271,14 +278,33 @@ input[type="radio"] {
 .submit-btn {
   font-family: "Comfortaa", sans-serif;
   margin: 30px auto;
-  width: 175px;
-  height: 50px;
+  width: 20vw;
+  height: 5vw;
   border: none;
   color: #023a6d;
   background-color: #c2d7eb;
   cursor: pointer;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 2vw;
+
+  @media (max-width: 1000px) {
+    width: 27vw;
+    height: 6.5vw;
+    font-size: 2.7vw;
+  }
+  @media (max-width: 800px) {
+    width: 29vw;
+    height: 7.3vw;
+    font-size: 3vw;
+  }
+  @media (max-width: 600px) {
+    width: 40vw;
+    height: 7vh;
+    font-size: 4vw;
+  }
+  
+  span {
+    font-weight: 700;
+  }
 }
 
 .validation-text {

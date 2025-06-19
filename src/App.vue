@@ -15,6 +15,7 @@
     <Look />
     <Wishes />
     <SurveyForm />
+    <Details />
   </main>
 </template>
 
@@ -26,6 +27,7 @@ import Place from './components/Place.vue'
 import SurveyForm from './components/SurveyForm.vue'
 import Look from './components/Look.vue'
 import Wishes from './components/Wishes.vue'
+import Details from './components/Details.vue'
 
 const isLoading = ref(false)
 const audioRef =ref<HTMLAudioElement | null>(null)
