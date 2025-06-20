@@ -27,7 +27,7 @@
       </ul>
 
       <div v-if="!isFetchSuccessed" class="form__item">
-        <div v-if="!isValidated" class="validation-text">Пожалуйста, дайте ответ на все вопросы&#128155;</div>
+        <div v-if="!isValidated" class="validation-text">Пожалуйста, дайте ответы на все вопросы&#128155;</div>
         <button type="submit" class="submit-btn">
           <span v-if="isFetchLoading">Отправляем...</span>
           <span v-else>Отправить</span>

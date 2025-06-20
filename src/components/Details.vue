@@ -96,6 +96,7 @@
     font-family: "Caveat", cursive;
     font-size: 4vw;
     color: #023a6d;
+    text-decoration: none;
 
     @media (max-width: 1000px) {
       font-size: 5vw;
@@ -116,66 +117,91 @@
 .lemon-left {
   width: 80%;
   position: absolute;
-  left: -630px;
-  bottom: -220px;
+  left: -700px;
+  bottom: 0;
   transform: rotate(280deg);
 
   @media (max-width: 1600px) {
-    left: -500px;
+    left: -570px;
+  }
+  @media (max-width: 1400px) {
+    left: -510px;
   }
   @media (max-width: 1300px) {
-    left: -350px;
-    bottom: -150px;
+    left: -470px;
+  }
+  @media (max-width: 1150px) {
+    left: -400px;
   }
   @media (max-width: 1000px) {
-    left: -300px;
-    bottom: -150px;
+    left: -470px;
+  }
+  @media (max-width: 900px) {
+    left: -410px;
   }
   @media (max-width: 800px) {
-    left: -250px;
-    bottom: -100px;
+    left: -350px;
   }
   @media (max-width: 700px) {
-    left: -220px;
+    left: -300px;
+  }
+  @media (max-width: 600px) {
+    left: -250px;
   }
   @media (max-width: 500px) {
-    left: -180px;
+    left: -190px;
   }
   @media (max-width: 450px) {
-    left: -140px;
+    left: -170px;
+  }
+  @media (max-width: 400px) {
+    left: -170px;
   }
 }
 
 .lemon-right {
   width: 85%;
   position: absolute;
-  right: -600px;
-  bottom: -400px;
+  right: -750px;
+  bottom: 0;
   transform: rotate(-20deg);
 
   @media (max-width: 1600px) {
-    right: -500px;
-    bottom: -250px;
+    right: -640px;
+  }
+  @media (max-width: 1400px) {
+    right: -580px;
   }
   @media (max-width: 1300px) {
-    right: -400px;
-    bottom: -150px;
+    right: -530px;
+  }
+  @media (max-width: 1150px) {
+    right: -490px;
   }
   @media (max-width: 1000px) {
     width: 80%;
-    right: -300px;
-    bottom: -150px;
+    right: -500px;
+  }
+  @media (max-width: 900px) {
+    right: -460px;
   }
   @media (max-width: 800px) {
-    right: -300px;
-    bottom: -100px;
+    right: -400px;
   }
   @media (max-width: 700px) {
-    right: -270px;
+    right: -350px;
+  }
+  @media (max-width: 600px) {
+    right: -280px;
   }
   @media (max-width: 500px) {
-    right: -110px;
-    bottom: -150px;
+    right: -220px;
+  }
+  @media (max-width: 450px) {
+    right: -200px;
+  }
+  @media (max-width: 400px) {
+    right: -170px;
   }
 }
 </style>
